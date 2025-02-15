@@ -1,4 +1,4 @@
-import { Pressable, StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
+import { Pressable, StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
@@ -13,7 +13,7 @@ export const Fab = ({ iconName, onPress, style }: Props) => {
     return (
         <View style={[styles.btn, style]}>
 
-            <Pressable onPress={() => onPress}>
+            <Pressable onPress={ onPress}>
                 <Icon name={ iconName } size={30} color="white" />
             </Pressable>
 
